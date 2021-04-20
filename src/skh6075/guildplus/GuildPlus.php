@@ -29,7 +29,7 @@ final class GuildPlus extends PluginBase{
         PluginLang::getInstance()->setDefaultProperties($lang, yaml_parse(file_get_contents($this->getDataFolder() . "lang/" . $lang . ".yml")));
 
         foreach (array_diff(scandir($this->getDataFolder() . "guilds/"), ['.', '..']) as $value) {
-            if (pathinfo($value)[PATHINFO_EXTENSION] !== "json")
+            if (pathinfo($value,PATHINFO_EXTENSION) !== "json")
                 continue;
 
             $data = json_decode(file_get_contents($this->getDataFolder() . "guilds/" . $value), true);
