@@ -1,0 +1,3 @@
+prefix: "§l§b[길드]§r§7 "
+
+save.guild.message: "총 %count% 개 길드를 저장했습니다."
