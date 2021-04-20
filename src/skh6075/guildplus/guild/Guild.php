@@ -55,4 +55,8 @@ final class Guild implements \JsonSerializable{
         $accessor = [$this->owner] + $this->co_owner + $this->member;
         return in_array($name, $accessor);
     }
+    
+    public function getLevelProcess(): GuildLevelProcess{
+        return $this->levelProcess;
+    }
 }
