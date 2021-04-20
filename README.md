@@ -24,7 +24,7 @@ GuildPlus::getInstance()->addGuild(Player $ownerPlayer, string $guildName);
 $guild = GuildPlus::getInstance()->getGuild(string $guildName);
 ```
 
-> If you want to Guild LevelProcess?
+> If you want to use Guild LevelProcess?
 ```php
 $levelProcess = $guild->getLevelProocess();
 $levelProcess->getLevel();
