@@ -26,7 +26,7 @@ $guild = GuildPlus::getInstance()->getGuild(string $guildName);
 
 > If you want to use Guild LevelProcess?
 ```php
-$levelProcess = $guild->getLevelProocess();
+$levelProcess = $guild->getLevelProcess();
 $levelProcess->getLevel();
 $levelProcess->getExperience();
 $levelPrccess->addExperience(float $amount);
